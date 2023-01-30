@@ -73,6 +73,7 @@
             <argument name="transferFactory" xsi:type="object">Silin\Authorizenet\Gateway\Http\TransferFactory</argument>
             <argument name="client" xsi:type="object">Silin\Authorizenet\Gateway\Http\Client</argument>
             <argument name="handler" xsi:type="object">SilinAuthorizenetChargeHandler</argument>
+            <argument name="validator" xsi:type="object">Silin\Authorizenet\Gateway\Validator\GeneralResponseValidator</argument>
         </arguments>
     </virtualType>
 
@@ -107,6 +108,7 @@
         <arguments>
             <argument name="handlers" xsi:type="array">
                 <item name="payment_details" xsi:type="string">Silin\Authorizenet\Gateway\Response\PaymentDetailsHandler</item>
+                <item name="transaction_details" xsi:type="string">Silin\Authorizenet\Gateway\Response\TransactionAdditionalInfoHandler</item>
             </argument>
         </arguments>
     </virtualType>
