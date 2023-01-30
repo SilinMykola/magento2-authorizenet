@@ -8,4 +8,5 @@ In order to install the module, please copy files to app/Vendor_Name/Module_Name
 
 ## Authors
 
+* Max Pronko
 * Mykola Silin
